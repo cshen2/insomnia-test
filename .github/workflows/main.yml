@@ -7,4 +7,5 @@ jobs:
       - uses: kong/setup-inso@v1
         with:
           inso-version: 8.4.2
+          compression: gzip
       - run: inso --version
