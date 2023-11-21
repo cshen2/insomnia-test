@@ -7,5 +7,5 @@ jobs:
       - uses: kong/setup-inso@v1
         with:
           inso-version: 3.5.0
-          compression: gzip
+          compression: bzip
       - run: inso --version
