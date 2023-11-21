@@ -1,0 +1,36 @@
+_id: req_e60b2e3aabfa41549cf0cd7c0ccab6a0
+type: Request
+parentId: fld_55f704cd376e4268868535db95dc8ec7
+modified: 1699786454392
+created: 1699786454392
+url: "{{ _.base_url }}/user/{{ _.username }}"
+name: Updated user
+description: This can only be done by the logged in user.
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 0,
+      "username": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string",
+      "password": "string",
+      "phone": "string",
+      "userStatus": 0
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json
+authentication: {}
+metaSortKey: -1699786454392
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

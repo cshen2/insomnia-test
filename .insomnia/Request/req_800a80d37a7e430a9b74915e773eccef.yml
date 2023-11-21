@@ -1,0 +1,36 @@
+_id: req_800a80d37a7e430a9b74915e773eccef
+type: Request
+parentId: fld_55f704cd376e4268868535db95dc8ec7
+modified: 1699786454393
+created: 1699786454393
+url: "{{ _.base_url }}/user"
+name: Create user
+description: This can only be done by the logged in user.
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 0,
+      "username": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string",
+      "password": "string",
+      "phone": "string",
+      "userStatus": 0
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json
+authentication: {}
+metaSortKey: -1699786454393
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,31 @@
+_id: req_98c28bc96f10431cbc5bc99b046dbe42
+type: Request
+parentId: fld_6bf765234ab0488b92738464688541de
+modified: 1699786454390
+created: 1699786454390
+url: "{{ _.base_url }}/pet/findByTags"
+name: Finds Pets by tags
+description: Multiple tags can be provided with comma separated strings. Use
+  tag1, tag2, tag3 for testing.
+method: GET
+body: {}
+parameters:
+  - name: tags
+    disabled: false
+    value: string
+headers: []
+authentication:
+  type: oauth2
+  grantType: authorization_code
+  disabled: false
+  authorizationUrl: https://petstore.swagger.io/oauth/authorize
+  clientId: "{{ _.client_id }}"
+  scope: write:pets read:pets
+metaSortKey: -1699786454390
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

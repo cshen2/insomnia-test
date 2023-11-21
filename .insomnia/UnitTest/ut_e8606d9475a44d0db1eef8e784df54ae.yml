@@ -1,0 +1,16 @@
+_id: ut_e8606d9475a44d0db1eef8e784df54ae
+type: UnitTest
+parentId: uts_cb7f2fe5ccaf45f3a26a7308556dfcf2
+modified: 1700587670965
+created: 1699787109416
+requestId: req_9cbe682a1d27412186c851654a2f4a95
+name: Test 1
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
+
+  const body = JSON.parse(response1.data);
+  console.log(body);
+
+  expect(body).to.be.an('object');
+  expect(body).to.have.property('id');
