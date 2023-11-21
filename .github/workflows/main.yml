@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: kong/setup-inso@v1
         with:
-          inso-version: 8.4.2
+          inso-version: 3.5.0
           compression: gzip
       - run: inso --version
